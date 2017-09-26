@@ -17,3 +17,6 @@ An offline-mode/extra account system for Bukkit/Spigot servers!
 ### Configure BungeeCord
 - 1. Change default server to AuthServer (in `config.properties``)
 - 2. Make sure your `lobby-server` is in defined in BungeeCord's `config.yml`
+
+# License
+GPLv3
