@@ -21,10 +21,7 @@ import org.dragonet.mcauthserver.utils.SessionUtils;
 import org.dragonet.mcauthserver.utils.SimpleLogger;
 import org.dragonet.mcauthserver.utils.URUtils;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.InputStream;
+import java.io.*;
 import java.util.Properties;
 
 /**
@@ -50,6 +47,11 @@ public class AuthServer {
     private void run() {
         // create logging system
         logger.addOutput(System.out);
+        try {
+            logger.addOutput(new FileOutputStream("console.log"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
         File file = new File("config.properties");
         File langFile = new File("lang.properties");
