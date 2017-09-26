@@ -1,6 +1,6 @@
 AuthServer
 ==========
-!()[https://github.com/DragonetMC/AuthServer/blob/master/assets/login.jpg?raw=true]
+![screenshot](https://github.com/DragonetMC/AuthServer/blob/master/assets/login.jpg)
 
 An offline-mode/extra account system for Bukkit/Spigot servers! 
 
